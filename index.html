@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кухни и мебель на заказ в Карталах — Классик-мебель</title>
+<meta name="description" content="Классик-мебель: кухни, шкафы, прихожие и корпусная мебель по индивидуальному проекту в Карталах. Салон с образцами — ул. Ленина, 8.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="canonical" href="https://dlisitsin.github.io/klassik-mebel/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Классик-мебель — кухни и мебель на заказ в Карталах">
+<meta property="og:description" content="Кухни, шкафы, прихожие и корпусная мебель по индивидуальному проекту. Салон с образцами — Карталы, ул. Ленина, 8.">
+<meta property="og:url" content="https://dlisitsin.github.io/klassik-mebel/">
+<meta property="og:image" content="https://dlisitsin.github.io/klassik-mebel/images/hero.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FurnitureStore",
+  "name": "Классик-мебель",
+  "description": "Кухни, шкафы, прихожие и корпусная мебель по индивидуальному проекту в Карталах",
+  "telephone": "+79823271823",
+  "url": "https://dlisitsin.github.io/klassik-mebel/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Ленина, 8",
+    "addressLocality": "Карталы",
+    "addressRegion": "Челябинская область",
+    "addressCountry": "RU"
+  },
+  "openingHours": ["Mo-Fr 10:00-18:00", "Sa 10:00-16:00"],
+  "sameAs": ["https://vk.com/id743317199"]
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141414;
+  --gray:#6d6d6d;
+  --bg:#ffffff;
+  --bg-alt:#f4f4f2;
+  --line:#e4e4e0;
+  --radius:16px;
+  --wrap:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Montserrat',sans-serif;
+  background:var(--bg);color:var(--ink);
+  line-height:1.55;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+section{padding:90px 0}
+
+/* большие заголовки капсом, как на референсе */
+.h-big{
+  font-weight:800;text-transform:uppercase;
+  font-size:clamp(30px,4.4vw,54px);
+  line-height:1.08;letter-spacing:.01em;
+}
+.h-big .thin{font-weight:500}
+.h-sub{
+  margin-top:16px;color:var(--gray);
+  font-size:17px;font-weight:500;max-width:640px;
+}
+/* стрелка-указатель возле заголовков */
+.arrow-decor{
+  flex:none;width:64px;height:64px;margin-top:8px;
+}
+.arrow-decor svg{width:100%;height:100%;stroke:var(--ink);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.section-head{display:flex;gap:26px;align-items:flex-start;margin-bottom:48px}
+
+/* ---------- шапка ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.95);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.header-in{
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  max-width:var(--wrap);margin:0 auto;padding:14px 20px;
+}
+.logo{font-weight:800;text-transform:uppercase;font-size:19px;letter-spacing:.05em;line-height:1.1}
+.logo span{display:block;font-size:10px;font-weight:600;letter-spacing:.32em;color:var(--gray)}
+nav ul{display:flex;gap:26px}
+nav a{font-size:14px;font-weight:600;transition:opacity .2s}
+nav a:hover{opacity:.55}
+.header-right{display:flex;align-items:center;gap:14px}
+.header-phone{font-weight:700;font-size:15px;white-space:nowrap}
+.icon-btn{
+  width:38px;height:38px;border-radius:50%;flex:none;
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--ink);color:#fff;transition:opacity .2s;
+}
+.icon-btn:hover{opacity:.7}
+.icon-btn svg{width:19px;height:19px;fill:currentColor}
+.burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0}
+
+/* ---------- hero ---------- */
+.hero{padding:56px 0 0}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.hero-label{font-size:15px;font-weight:600;color:var(--gray);text-transform:lowercase}
+.hero h1{
+  font-weight:800;text-transform:uppercase;
+  font-size:clamp(38px,5.4vw,68px);line-height:1.04;margin-top:10px;
+}
+.hero-desc{margin-top:20px;color:var(--gray);font-weight:500;font-size:17px;max-width:520px}
+.hero-cta{display:flex;align-items:center;gap:16px;margin-top:30px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 32px;border-radius:999px;
+  font-weight:700;font-size:15px;transition:opacity .2s, transform .2s;
+}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{opacity:.82;transform:translateY(-2px)}
+.btn-light{border:1.5px solid var(--ink)}
+.btn-light:hover{background:var(--ink);color:#fff}
+.hero-phone-big{font-size:22px;font-weight:800;margin-top:26px;display:inline-block}
+.hero-checks{margin-top:34px;display:grid;gap:14px}
+.check-item{display:flex;gap:12px;align-items:flex-start;font-weight:600;font-size:15px}
+.check-item svg{flex:none;width:22px;height:22px;margin-top:1px;stroke:var(--ink);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.hero-geo{display:flex;align-items:center;gap:8px;margin-top:30px;font-weight:700;font-size:15px}
+.hero-geo svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:2}
+.hero-photo{border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;max-height:680px;align-self:center;justify-self:end;width:100%}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+
+/* ---------- работы ---------- */
+.works{background:var(--bg-alt)}
+.works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.work-card{
+  position:relative;border-radius:var(--radius);overflow:hidden;
+  aspect-ratio:4/5;cursor:zoom-in;background:#ddd;
+}
+.work-card img{width:100%;height:100%;object-fit:cover;transition:transform .55s ease}
+.work-card:hover img{transform:scale(1.05)}
+.work-card figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:46px 18px 16px;color:#fff;font-weight:700;font-size:15px;
+  background:linear-gradient(to top,rgba(0,0,0,.66),transparent);
+}
+
+/* ---------- преимущества ---------- */
+.adv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.adv-card{
+  border:1.5px solid var(--line);border-radius:var(--radius);
+  padding:28px;transition:border-color .25s, transform .25s;background:#fff;
+}
+.adv-card:hover{border-color:var(--ink);transform:translateY(-4px)}
+.adv-card .check-item{font-size:18px;font-weight:700;margin-bottom:10px}
+.adv-card p{color:var(--gray);font-weight:500;font-size:15px;padding-left:34px}
+
+/* ---------- этапы ---------- */
+.steps{background:var(--bg-alt)}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step-card{background:#fff;border-radius:var(--radius);padding:28px;border:1.5px solid var(--line)}
+.step-num{font-size:44px;font-weight:800;line-height:1;color:var(--line);
+  -webkit-text-stroke:1.5px var(--ink);color:transparent;}
+.step-card h3{font-size:19px;font-weight:800;text-transform:uppercase;margin:16px 0 8px}
+.step-card p{color:var(--gray);font-weight:500;font-size:15px}
+
+/* ---------- галерея (две бегущие ленты, как на референсе) ---------- */
+.gallery{overflow:hidden}
+.marquee{display:flex;gap:16px;width:max-content;margin-bottom:16px;animation:scroll-l 60s linear infinite}
+.marquee.reverse{animation:scroll-r 60s linear infinite}
+.marquee:hover{animation-play-state:paused}
+.marquee a{flex:none;width:300px;height:220px;border-radius:var(--radius);overflow:hidden;cursor:zoom-in}
+.marquee img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.marquee a:hover img{transform:scale(1.06)}
+@keyframes scroll-l{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes scroll-r{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@media (prefers-reduced-motion: reduce){
+  .marquee,.marquee.reverse{animation:none;overflow-x:auto;width:100%}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- контакты ---------- */
+.contacts{background:var(--ink);color:#fff}
+.contacts .arrow-decor svg{stroke:#fff}
+.contacts .h-sub{color:rgba(255,255,255,.6)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.contact-item{padding:20px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.contact-item span{display:block;font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:8px}
+.contact-item a,.contact-item p{font-size:19px;font-weight:700}
+.contact-item a:hover{opacity:.7}
+.contact-item small{display:block;font-size:14px;font-weight:500;color:rgba(255,255,255,.6);margin-top:4px}
+.contact-photo{border-radius:var(--radius);overflow:hidden}
+.contact-photo img{width:100%;height:100%;object-fit:cover;min-height:420px}
+.contact-socials{display:flex;gap:12px;margin-top:26px}
+.contacts .icon-btn{background:rgba(255,255,255,.14)}
+.contacts .icon-btn:hover{background:#fff;color:var(--ink);opacity:1}
+
+/* ---------- футер ---------- */
+footer{background:var(--ink);color:rgba(255,255,255,.55);border-top:1px solid rgba(255,255,255,.12);padding:26px 0}
+.footer-in{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+footer .logo{color:#fff}
+.footer-note{font-size:13px;font-weight:500}
+
+/* ---------- лайтбокс ---------- */
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(10,10,10,.93);
+  display:none;align-items:center;justify-content:center;padding:32px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:92vw;max-height:88vh;border-radius:10px}
+.lightbox-close{position:absolute;top:20px;right:26px;background:none;border:none;color:#fff;font-size:40px;line-height:1;cursor:pointer;opacity:.85}
+.lightbox-close:hover{opacity:1}
+
+/* появление секций */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ---------- адаптив ---------- */
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-photo{order:-1;aspect-ratio:16/10;max-height:none}
+  .works-grid,.steps-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr}
+  nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:14px 20px 20px}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:14px}
+  .burger{display:block}
+  .header-phone{display:none}
+  .section-head{flex-direction:column;gap:14px}
+  .arrow-decor{width:46px;height:46px;margin-top:0}
+}
+@media (max-width:600px){
+  section{padding:60px 0}
+  .works-grid,.steps-grid{grid-template-columns:1fr}
+  .marquee a{width:230px;height:170px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= ШАПКА ================= -->
+<header>
+  <div class="header-in">
+    <a href="#" class="logo">Классик-мебель<span>Карталы</span></a>
+    <nav id="nav">
+      <ul>
+        <li><a href="#works">Наши работы</a></li>
+        <li><a href="#advantages">Преимущества</a></li>
+        <li><a href="#steps">Этапы работы</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <a class="header-phone" href="tel:+79823271823">+7 (982) 327-18-23</a>
+      <a class="icon-btn" href="https://vk.com/id743317199" target="_blank" rel="noopener" aria-label="Мы во ВКонтакте">
+        <svg viewBox="0 0 24 24"><path d="M13.16 18.5c-5.9 0-9.27-4.05-9.41-10.77h2.96c.1 4.94 2.27 7.03 4 7.46V7.73h2.78v4.26c1.7-.18 3.5-2.12 4.1-4.26h2.79c-.47 2.63-2.4 4.57-3.78 5.37 1.38.65 3.58 2.35 4.42 5.4h-3.07c-.66-2.04-2.3-3.62-4.46-3.83v3.83h-.33z"/></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= ГЛАВНЫЙ ЭКРАН ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hero-label">по индивидуальному проекту</p>
+      <h1>Создаём кухни<br>и мебель</h1>
+      <p class="hero-desc">Кухни, шкафы, прихожие и корпусная мебель под ваши размеры. Предложим разные варианты с учётом функциональных особенностей и расположения вашего помещения.</p>
+      <a class="hero-phone-big" href="tel:+79823271823">+7 (982) 327-18-23</a>
+      <div class="hero-cta">
+        <a class="btn btn-dark" href="#works">Смотреть работы</a>
+        <a class="btn btn-light" href="#contacts">Контакты</a>
+      </div>
+      <div class="hero-checks">
+        <div class="check-item"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Образцы в салоне: цвета, фурнитура, дизайн</div>
+        <div class="check-item"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Проект под размеры вашего помещения</div>
+        <div class="check-item"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Подберём вариант под ваш бюджет</div>
+      </div>
+      <p class="hero-geo">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        Карталы, ул. Ленина, 8
+      </p>
+    </div>
+    <div class="hero-photo">
+      <img src="images/hero.jpg" alt="Белая классическая кухня с декоративной решёткой — работа Классик-мебель">
+    </div>
+  </div>
+</section>
+
+<!-- ================= НАШИ РАБОТЫ ================= -->
+<section class="works" id="works">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <h2 class="h-big">Разрабатываем мебель<br><span class="thin">с учётом ваших</span><br>индивидуальных запросов</h2>
+        <p class="h-sub">От выбора материалов и размеров до функциональности и декоративных деталей</p>
+      </div>
+      <div class="arrow-decor"><svg viewBox="0 0 64 64"><path d="M8 12c14 4 34 6 44 28"/><path d="M42 34l10 8 2-14"/></svg></div>
+    </div>
+    <div class="works-grid">
+      <figure class="work-card reveal" data-full="images/work-01.jpg"><img src="images/work-01.jpg" alt="Кухня в классическом стиле" loading="lazy"><figcaption>Кухня в классическом стиле</figcaption></figure>
+      <figure class="work-card reveal" data-full="images/work-03.jpg"><img src="images/work-03.jpg" alt="Кухня графит с деревом" loading="lazy"><figcaption>Кухня «графит + дерево»</figcaption></figure>
+      <figure class="work-card reveal" data-full="images/work-23.jpg"><img src="images/work-23.jpg" alt="Шкаф-купе с зеркалом" loading="lazy"><figcaption>Шкаф-купе с зеркалом</figcaption></figure>
+      <figure class="work-card reveal" data-full="images/work-24.jpg"><img src="images/work-24.jpg" alt="Мебель для детской комнаты" loading="lazy"><figcaption>Мебель для детской</figcaption></figure>
+      <figure class="work-card reveal" data-full="images/work-08.jpg"><img src="images/work-08.jpg" alt="Прихожая на заказ" loading="lazy"><figcaption>Прихожая на заказ</figcaption></figure>
+      <figure class="work-card reveal" data-full="images/work-21.jpg"><img src="images/work-21.jpg" alt="Шкаф с туалетным столиком" loading="lazy"><figcaption>Шкаф и туалетный столик</figcaption></figure>
+      <figure class="work-card reveal" data-full="images/work-33.jpg"><img src="images/work-33.jpg" alt="Синий распашной шкаф в классическом стиле" loading="lazy"><figcaption>Распашной шкаф в классике</figcaption></figure>
+      <figure class="work-card reveal" data-full="images/work-39.jpg"><img src="images/work-39.jpg" alt="Мебель для ванной комнаты" loading="lazy"><figcaption>Мебель для ванной</figcaption></figure>
+      <figure class="work-card reveal" data-full="images/work-50.jpg"><img src="images/work-50.jpg" alt="ТВ-зона с рейками и тумбой" loading="lazy"><figcaption>Гостиная: ТВ-зона</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ПРЕИМУЩЕСТВА ================= -->
+<section id="advantages">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <h2 class="h-big">Используем проверенные<br><span class="thin">и качественные</span><br>материалы</h2>
+        <p class="h-sub">Что гарантирует долговечность и безопасность вашей мебели</p>
+      </div>
+      <div class="arrow-decor"><svg viewBox="0 0 64 64"><path d="M8 12c14 4 34 6 44 28"/><path d="M42 34l10 8 2-14"/></svg></div>
+    </div>
+    <div class="adv-grid">
+      <div class="adv-card reveal">
+        <div class="check-item"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Индивидуальный подход</div>
+        <p>Расскажите о своих пожеланиях — предложим разные варианты с учётом размеров, функциональных особенностей и даже расположения вашего помещения.</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="check-item"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Качественные материалы и фурнитура</div>
+        <p>Используем проверенные материалы и надёжную фурнитуру. Качество петель, направляющих и фасадов можно оценить вживую в нашем салоне.</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="check-item"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Образцы в салоне</div>
+        <p>Приходите и ознакомьтесь с имеющимися образцами: цветовая гамма, фактуры фасадов, фурнитура и дизайн — всё можно посмотреть и потрогать.</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="check-item"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Опытные сотрудники</div>
+        <p>Поможем определиться с проектом, подскажем практичные решения и подберём вариант под ваш бюджет.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ЭТАПЫ РАБОТЫ ================= -->
+<section class="steps" id="steps">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <h2 class="h-big">От идеи<br><span class="thin">до установки</span><br>в вашем доме</h2>
+        <p class="h-sub">Полный цикл: от эскиза до готовой мебели</p>
+      </div>
+      <div class="arrow-decor"><svg viewBox="0 0 64 64"><path d="M8 12c14 4 34 6 44 28"/><path d="M42 34l10 8 2-14"/></svg></div>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <div class="step-num">01</div>
+        <h3>Консультация</h3>
+        <p>Обсуждаем ваши пожелания: какая мебель нужна, какой стиль и бюджет. Приходите в салон или звоните.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">02</div>
+        <h3>Выбор материалов</h3>
+        <p>Подбираем цвет, фактуру фасадов и фурнитуру по образцам в салоне.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">03</div>
+        <h3>Замер</h3>
+        <p>Снимаем точные размеры помещения, чтобы мебель встала идеально.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">04</div>
+        <h3>Проект и согласование</h3>
+        <p>Готовим проект с учётом размеров и особенностей помещения, согласовываем детали и стоимость.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">05</div>
+        <h3>Изготовление</h3>
+        <p>Изготавливаем мебель точно по согласованному проекту.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">06</div>
+        <h3>Установка</h3>
+        <p>Доставим и установим мебель в согласованные сроки, воплотив вашу идею в жизнь.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ГАЛЕРЕЯ ================= -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <h2 class="h-big">Галерея<br><span class="thin">наших работ</span></h2>
+        <p class="h-sub">Наведите на ленту, чтобы остановить. Нажмите на фото, чтобы рассмотреть.</p>
+      </div>
+      <div class="arrow-decor"><svg viewBox="0 0 64 64"><path d="M8 12c14 4 34 6 44 28"/><path d="M42 34l10 8 2-14"/></svg></div>
+    </div>
+  </div>
+  <div class="marquee" id="row1"></div>
+  <div class="marquee reverse" id="row2"></div>
+</section>
+
+<!-- ================= КОНТАКТЫ ================= -->
+<section class="contacts" id="contacts">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <h2 class="h-big">Приходите в салон —<br><span class="thin">покажем</span> образцы</h2>
+        <p class="h-sub">Ответим на все вопросы и поможем найти лучшее решение</p>
+      </div>
+      <div class="arrow-decor"><svg viewBox="0 0 64 64"><path d="M8 12c14 4 34 6 44 28"/><path d="M42 34l10 8 2-14"/></svg></div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-item">
+          <span>Телефон</span>
+          <a href="tel:+79823271823">+7 (982) 327-18-23</a>
+        </div>
+        <div class="contact-item">
+          <span>Адрес</span>
+          <p>Челябинская область, Карталы, ул. Ленина, 8</p>
+        </div>
+        <div class="contact-item">
+          <span>Режим работы</span>
+          <p>Пн–Пт: 10:00 – 18:00</p>
+          <small>Суббота: 10:00 – 16:00 · Воскресенье — выходной</small>
+        </div>
+        <div class="contact-socials">
+          <a class="icon-btn" href="https://vk.com/id743317199" target="_blank" rel="noopener" aria-label="Мы во ВКонтакте">
+            <svg viewBox="0 0 24 24"><path d="M13.16 18.5c-5.9 0-9.27-4.05-9.41-10.77h2.96c.1 4.94 2.27 7.03 4 7.46V7.73h2.78v4.26c1.7-.18 3.5-2.12 4.1-4.26h2.79c-.47 2.63-2.4 4.57-3.78 5.37 1.38.65 3.58 2.35 4.42 5.4h-3.07c-.66-2.04-2.3-3.62-4.46-3.83v3.83h-.33z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-photo reveal">
+        <img src="images/work-13.jpg" alt="Кухня графит с мраморным фартуком — работа Классик-мебель" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ФУТЕР ================= -->
+<footer>
+  <div class="wrap footer-in">
+    <a href="#" class="logo">Классик-мебель</a>
+    <p class="footer-note">Карталы, ул. Ленина, 8 · +7 (982) 327-18-23</p>
+    <a class="icon-btn" href="https://vk.com/id743317199" target="_blank" rel="noopener" aria-label="Мы во ВКонтакте">
+      <svg viewBox="0 0 24 24"><path d="M13.16 18.5c-5.9 0-9.27-4.05-9.41-10.77h2.96c.1 4.94 2.27 7.03 4 7.46V7.73h2.78v4.26c1.7-.18 3.5-2.12 4.1-4.26h2.79c-.47 2.63-2.4 4.57-3.78 5.37 1.38.65 3.58 2.35 4.42 5.4h-3.07c-.66-2.04-2.3-3.62-4.46-3.83v3.83h-.33z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<!-- ================= ЛАЙТБОКС ================= -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">&times;</button>
+  <img id="lightboxImg" src="" alt="Просмотр фотографии">
+</div>
+
+<script>
+// мобильное меню
+const burger = document.getElementById('burger');
+const nav = document.getElementById('nav');
+burger.addEventListener('click', () => nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+// галерея: две бегущие ленты (содержимое дублируется для бесшовной прокрутки)
+const row1Imgs = ['02','04','06','07','09','10','11','12','14','15','16','27','31','34','35','36','37','38','40','41'];
+const row2Imgs = ['17','18','19','20','22','25','26','28','29','30','05','13','32','42','43','44','45','46','47','48','49'];
+function fillRow(el, list){
+  const make = n => {
+    const a = document.createElement('a');
+    a.href = `images/work-${n}.jpg`;
+    const img = document.createElement('img');
+    img.src = `images/work-${n}.jpg`;
+    img.alt = 'Мебель производства Классик-мебель';
+    img.loading = 'lazy';
+    a.appendChild(img);
+    return a;
+  };
+  list.forEach(n => el.appendChild(make(n)));
+  list.forEach(n => el.appendChild(make(n))); // дубль для бесшовной анимации
+}
+fillRow(document.getElementById('row1'), row1Imgs);
+fillRow(document.getElementById('row2'), row2Imgs);
+
+// лайтбокс
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+function openLightbox(src){ lightboxImg.src = src; lightbox.classList.add('open'); document.body.style.overflow = 'hidden'; }
+function closeLightbox(){ lightbox.classList.remove('open'); document.body.style.overflow = ''; }
+document.addEventListener('click', e => {
+  const card = e.target.closest('.work-card');
+  if(card){ openLightbox(card.dataset.full); return; }
+  const g = e.target.closest('.marquee a');
+  if(g){ e.preventDefault(); openLightbox(g.getAttribute('href')); }
+});
+lightbox.addEventListener('click', e => { if(e.target === lightbox) closeLightbox(); });
+document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLightbox(); });
+
+// появление при скролле
+const io = new IntersectionObserver(entries => {
+  entries.forEach(en => { if(en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target); } });
+}, {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
